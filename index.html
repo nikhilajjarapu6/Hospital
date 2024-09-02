@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="./script.js"></script>
+
+</head>
+<body>
+    <div class="container">
+    <header> 
+        <div id="navbar-div">
+        <nav>
+            <div class="logo">
+                <h1>City Hospital</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div>
+                <p>Book Now</p>
+            </div>
+        </nav>
+        </div>
+    </header>
+
+    <section id="home" class="section-one">
+        <div>
+        <p>Where Prime <br> Smiles Meets <br> Prime <Span style="color: blue;">Dentist</Span></p>
+        <p>Teeth Cleaning & Whitening For a Confident Smile</p>
+        <div id="tags">
+            <span class="tag">Dental Care</span>
+            <span class="tag">Cosmetic Dentistry</span>
+            <span class="tag">Teeth Whitening</span> <br>
+            
+        </div>
+        </div>
+        <!-- <img src="./images/bg1.png" alt=""> -->
+        
+    </section>
+
+    <section  id="section-two">
+        <h2 style="font-size: 40px;">Our Services</h2>
+        <ul>
+            <li>
+                <h2>24/7 Emergency Care</h2>
+               <div> <img src="./images/24-hours-support.png" alt=""></div>
+              
+            </li>
+            <li>
+             <div>  <h2>Outpatient Services</h2> </div>
+               <img src="./images/technical-support.png" alt="" style="margin-left: 15px;">
+            </li>
+            <li>
+             <div> <h2>Specialized Surgery</h2>  </div>
+              <img src="./images/surgery-room (1).png" alt="">
+            </li>
+            <li>
+                <h2>Pharmacy Services</h2>
+                <div><img src="./images/medicine (2).png" alt=""></div>
+            </li>
+            <li>
+              <h2>experienced Staff</h2>
+              <div><img src="./images/network.png" alt=""></div>
+            </li>
+            <li>
+                <h2 style="text-align: center;">International Equipments</h2>
+               
+                <div  ><img src="./images/robotic-surgery.png" alt=""></div>
+            </li>
+
+        </ul>
+        <div id="service-div">We pride ourselves on delivering not only excellent medical care but also a positive and supportive patient experience. Our team is dedicated to making each visit comfortable and stress-free.</div>
+    </section>
+
+    <section id="section-three" class="section">
+        <div id="aside-one"></div>
+        <div id="aside-two">
+            <h2 id="heading-one">Start Your Treatment <br> keep Smile</h2>
+            <p style=" text-align: left; margin: 10px 0px 10px 0px;" >Every step in your journey is crucial to achieving outstanding natural results. </p>
+            <div class="step-container">
+                <div class="step-numbers">
+                    <div class="step" data-step="1">STEP 01</div>
+                    <div class="step" data-step="2">STEP 02</div>
+                    <div class="step" data-step="3">STEP 03</div>
+                    <div class="step" data-step="4">STEP 04</div>
+                </div>
+                <hr>
+              
+                <div class="step-info">
+                    <div class="info" id="step-1">
+                        <h2>Book a Appointment</h2>
+                        <p class="description">Schedule your appointment online or call us to set a time that works best for you.</p>
+                    </div>
+                    <div class="info" id="step-2">
+                        <h2>Free Consultation</h2>
+                        <p class="description">Every step in your journey is crucial to achieving outstanding, enduring, and natural results.</p>
+                    </div>
+                    <div class="info" id="step-3">
+                        <h2>Dental Care</h2>
+                        <p class="description">Receive comprehensive dental care tailored to your individual needs.</p>
+                    </div>
+                    <div class="info" id="step-4">
+                        <h2>Dental Control</h2>
+                        <p class="description">Regular dental check-ups and control to maintain your oral health.</p>
+                    </div>
+                </div>
+            </div>
+       
+    </section>
+    <section id="section-four" class="section">
+        <div id="appointment-booking">
+            <h2>Book Your New Smiles</h2>
+            <form id="appointment-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name"  required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="date">Preferred Appointment Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="doctor">Choose a Doctor:</label>
+                    <select id="doctor" name="doctor" required>
+                        <option value="dr-smith">Dr.Hemanth</option>
+                        <option value="dr-jones">Dr. Bhasha</option>
+                        <option value="dr-taylor">Dr. Kalyan</option>
+                        <option value="dr-rama">Dr.Rama Devi</option>
+                        <option value="other">Other Doctors</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="location">Choose a Location:</label>
+                    <select id="location" name="location" required>
+                        <option value="ameerpet">Hyderabad-Ameerpet</option>
+                        <option value="hitech-city">Hyderabad-Hitech City</option>
+                        <option value="madhapur">Hyderabad-Madhapur</option>
+                        <option value="gajuvaka">Visakhapatnam-Gajuvaka</option>
+                        <option value="jntu">Hyderabad-JNTU</option>
+                        <option value="vijayawada">Vijayawada</option>
+                        <option value="kakinada">Kakinada</option>
+                        <option value="vizianagaram">Vizianagaram</option>
+                        <option value="ananthapur">Ananthapur</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Reason for Appointment:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Describe your dental issue or request" required></textarea>
+                </div>
+    
+                <div class="form-group">
+                    <button type="submit">Book Appointment</button>
+                </div>
+            </form>
+        </div>
+    
+        <!-- Modal for Appointment Confirmation -->
+        <div id="confirmation-modal" class="modal">
+            <div class="modal-content">
+                <p id="modal-message"></p>
+                <button id="close-modal">Close</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer id="footer-menus">
+        <div class="footer-container">
+            <!-- <div class="footer-section" id="first">
+                <button class="social-btn whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                <button class="social-btn"><i class="fa-brands fa-facebook"></i> Facebook</button>
+            </div> -->
+            <div class="footer-section" id="first">
+                <a href="https://wa.me/1234567890" target="_blank" style="text-decoration: none;">
+                    <button class="social-btn whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                </a>
+                <a href="https://facebook.com" target="_blank" style="text-decoration: none;">
+                    <button class="social-btn"><i class="fa-brands fa-facebook"></i> Facebook</button>
+                </a>
+            </div>
+            
+            
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Dental Veneers</a></li>
+                    <li><a href="#">Dental Braces</a></li>
+                    <li><a href="#">Teeth Whitening</a></li>
+                    <li><a href="#">Dental Implants</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">Our Values</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Treatments</h3>
+                <ul>
+                    <li><a href="#">Dental Veneers</a></li>
+                    <li><a href="#">Dental Braces</a></li>
+                    <li><a href="#">Teeth Whitening</a></li>
+                    <li><a href="#">Dental Implants</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>© 2024 City Hospital, Hyderabad xxxx  Dr, 12345678. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+
+    </div>
+</body>
+</html>
